@@ -1,85 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>Nicholas Barbara</title>
+
+    <!-- Meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nicholas Barbara - Robotics PhD Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- From nerfies-->
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./css/bulma-slider.min.css">
+    <!-- <link rel="stylesheet" href="./css/fontawesome.all.min.css"> -->
+    <!-- <link rel="stylesheet" href="./css/academicicons.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
+
+    <!-- Offline versions of the icon libraries don't seem to work.
+    When finding an icon, check out all the available prefixes.
+    Eg: .fa,.fab,.fad,.fal,.far,.fas -->
+
+    <!-- Custom Styles -->
+    <style>
+          body {
+            font-family: Roboto, 'sans-serif';
+            font-size: 16px;
+            background-color: #FFFFFF;
+            color: #4F6071;
+          }
+          h1 {
+              font-weight: 300;
+              font-size: 2rem;
+          }
+          #header {
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: flex-end;
+            padding-top:60px;
+            padding-bottom:60px;
+          }
+          #footer {
+            background-color: #FFFFFF;
+            padding:60px;
+          }
+          #portrait {
+            border: 3px solid white;
+            width: 250;
+            height: 250;
+            border-radius: 50%;
+          }
+          #header-text {
+            margin-top: 60px;
+            margin-left: 220px;
+          }
+          #header-text-name {
+            font-size: 40px;
+          }
+          #header-text-title {
+              font-size: 17px;
+          }
+          #header-text-affiliation {
+              font-size: 17px;
+              margin-top: 10px;
+          }
+          #header-text-email {
+            margin-top: 10px;
+            font-size: 17px;
+            font-style: italic;
+          }
+          .header-text-desc {
+            font-size: 20px;
+          }
+          .vspace-top {
+            margin-top: 30px;
+          }
+          .vspace-top-news {
+              margin-top: 15px;
+          }
+          .paper-image {
+            width: 150px;
+          }
+          .news-date {
+              font-weight: bold;
+          }
+          .paper-title {
+            font-weight: bold;
+          }
+          .paper-desc {
+            font-style: italic;
+          }
+    </style>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <!-- Navbar content (if needed) -->
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-            <a class="navbar-item" href="#">Home</a>
-            <!-- <a class="navbar-item" href="#">Research</a> -->
-            <!-- Add more navbar items as needed -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!-- Navbar content (if needed) -->
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="#">Home</a>
+                <!-- <a class="navbar-item" href="#">Research</a> -->
+            </div>
+        </div>
+    </nav> 
+
+    <div id='header'>
+        <div class='container'>
+            <div class='row'>
+                <div class="col-sm-3 offset-sm-1">
+                    <!-- <img src='imgs/nic_portrait.jpg' class='rounded'> -->
+                    <img src='imgs/nic_portrait.jpg' class='img-fluid' id='portrait'>
+                </div>
+
+                <div class="col">
+                  <div id='header-text-name'>
+                    Nicholas Barbara
+                  </div>
+                    <div id='header-text-title'>
+                        PhD Candidate in Robotics & Control
+                    </div>
+                    <div id='header-text-affiliation'>
+                        Australian Centre for Robotics | 
+                        University of Sydney
+                    </div>
+                  <!-- <div id='header-text-email'>
+                    <a href="mailto:nicholas.barbara@sydney.edu.au">nicholas.barbara@sydney.edu.au</a>
+                  </div> -->
+                  <br>
+                  <div>
+                    <p>
+                    I'm an engineer and researcher with a passion for solving challenging problems and understanding how the world works. My current research involves developing new techniques in robust reinforcement learning for application in real-world robotic systems. My key interests include optimal and learning-based control, spacecraft mission design and GNC, astronomy, and a little bit of cricket and jazz.
+                  </div>
+                  <br>
+                  <div>
+                    This page is currently a work-in-progress. In the mean time, please check out the links below and feel free to reach out via email at
+                    <a href="mailto:nicholas.barbara@sydney.edu.au">nicholas.barbara@sydney.edu.au.</a>
+                  </div>
+                  <br>
+                  <div>
+                    <span class="link-block">
+                        <a href="https://www.linkedin.com/in/nicholas-barbara/"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                        <span>LinkedIn</span>
+                      </a>
+                    </span>
+                    <span class="link-block">
+                        <a href="https://scholar.google.com.au/citations?user=88AOpNAAAAAJ&hl=en"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="ai ai-google-scholar"></i>
+                        </span>
+                        <span>Google Scholar</span>
+                        </a>
+                    </span>
+                    <span class="link-block">
+                        <a href="https://github.com/nic-barbara"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fab fa-github"></i> 
+                        </span>
+                        <span>GitHub</span>
+                        </a>
+                    </span>
+                  </div>
+
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+    
 
-<section class="hero">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title is-1">Nicholas Barbara</h1>
-            <p class="subtitle">PhD Candidate in Robotics at ACFR</p>
-            <br>
-            Engineer and researcher with a passion for solving challenging problems and understanding how the world works. My current research involves developing new techniques in robust reinforcement learning for application in real-world robotic systems. My key interests include optimal and learning-based control, spacecraft mission design and GNC, astronomy, and a little bit of cricket and jazz.
-            <br>
-            <br>
-            This page is currently a work-in-progress. In the mean time, please see my 
-            <a href="https://www.linkedin.com/in/nicholas-barbara/">LinkedIn,</a>
-            <a href="https://scholar.google.com.au/citations?user=88AOpNAAAAAJ&hl=en">Google Scholar,</a>
-            and 
-            <a href="https://github.com/nic-barbara">GitHub,</a>
-            or feel free to reach out via email at
-            <a href="mailto:nicholas.barbara@sydney.edu.au">nicholas.barbara@sydney.edu.au.</a>
-        </div>
-    </div>
-</section>
 
-<!-- <section class="section">
-    <div class="container">
-        <h2 class="title is-2">Published Research</h2>
+    <!-- <div class='container'>
+        <div class='row vspace-top'>
+            <div class='col offset-sm-1'>
 
-        <div class="box">
-            <article class="media">
-                <div class="media-content">
-                    <div class="content">
-                        <h3 class="title is-4">Research Title 1</h3>
-                        <p>Description of the research. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="link/to/paper1.pdf" target="_blank">Read Paper</a></p>
-                        <p><a href="link/to/code1" target="_blank">Code Repository</a></p>
+                <div class='vspace-top'>
+                    <h1>News</h1>
+                </div>
+
+                <div class='row vspace-top-news'>
+                    <div class="col-sm-2 news-date">
+                        Jan 2024
+                    </div>
+                    <div class="col">
+                        Insert some news here. Copy this whole block for a new row of news.
                     </div>
                 </div>
-            </article>
 
-            <article class="media">
-                <div class="media-content">
-                    <div class="content">
-                        <h3 class="title is-4">Research Title 2</h3>
-                        <p>Description of the research. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><a href="link/to/paper2.pdf" target="_blank">Read Paper</a></p>
-                        <p><a href="link/to/code2" target="_blank">Code Repository</a></p>
-                    </div>
+                <div class='vspace-top'>
+                    <h1>Publications</h1>
                 </div>
-            </article>
 
+                <div class='row vspace-top'>
+
+                    <div class="col-sm-3">
+                        <img src="imgs/class-examples.svg">
+
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Classifying <i>Kepler</i> light curves for 12 000 A and F stars using supervised feature-based machine learning
+                        </div>
+                        <div class='paper-desc'>
+                            Monthly Notices of the Royal Astronomical Society (2022)
+                        </div>
+                        <div class='paper-authors'>
+                            Nicholas H Barbara, Timothy R Bedding, Ben D Fulcher, Simon J Murphy, Timothy Van Reeth
+                        </div>
+                        <br>
+                        <div>
+                            <span class="link-block">
+                                <a href="https://doi.org/10.1093/mnras/stac1515"
+                                class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </span>
+                                <span>Paper</span>
+                              </a>
+                            </span>
+                            <span class="link-block">
+                                <a href="https://arxiv.org/abs/2205.03020"
+                                class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="ai ai-arxiv"></i>
+                                </span>
+                                <span>arXiv</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-    </div>
-</section> -->
+    </div> -->
 
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>&copy; 2024 Nicholas Barbara | Contact: nicholas.barbara@sydney.edu.au</p>
-    </div>
-</footer>
+    <!-- Footer -->
+    <div id='footer' class='vspace-top'>
+        <div class="content has-text-centered">
+            <p>&copy; 2024 Nicholas Barbara | Contact: 
+                <a href="mailto:nicholas.barbara@sydney.edu.au">nicholas.barbara@sydney.edu.au</a>
+                | Website based on 
+            <a href="https://github.com/vsitzmann/vsitzmann.github.io">this open-source repository.</a>
+            </p>
+        </div>
+    <div>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
