@@ -2,7 +2,7 @@
 
 Work-in-progress repository for a personal webpage. TODO:
 
-- [ ] Add profile picture
-- [ ] Add links to socials, google scholar, linkedin, etc...
+- [x] Add profile picture
+- [x] Add links to socials, google scholar, linkedin, etc...
 - [ ] Add research papers
 - [ ] Add other projects
