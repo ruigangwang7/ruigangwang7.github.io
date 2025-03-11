@@ -1,4 +1,4 @@
-# nic-barbara.github.io
+# ruigangwang7.github.io
 
 Work-in-progress repository for a personal webpage. TODO:
 
